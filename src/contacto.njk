@@ -10,21 +10,21 @@ eleventyNavigation:
 <div class="col-5 col-md-4 col-sm-3 col-xs-6 contacto-titulo">
   <h1 class="font-2 text-headline">contacto</h1>
 </div>
-<form class="col-7 col-md-6 col-sm-5 col-xs-6 contacto-form">
+<form name="contacto" data-netlify="true" class="col-7 col-md-6 col-sm-5 col-xs-6 contacto-form">
  ¡Hola!<br>
  <label for="name">Me llamo</label>
- <input id="name" type="text" placeholder="tu nobre">
+ <input name="nombre" id="name" type="text" placeholder="tu nobre">
   y <label for="proyect">tengo un proyecto de </label>
-  <select id="proyect">
-    <option>fotografía</option>
-    <option>ilustración</option>
-    <option>otro</option>
+  <select name="proyecto" id="proyect">
+    <option value="foto">fotografía</option>
+    <option value="ilustracion">ilustración</option>
+    <option value="otro">otro</option>
   <select>
   en el que me gustaria que me ayudaras.
   <label for="email">
   me puedes escribir a 
   </label>
-  <input required id="email" type="email" placeholder="tu email">
+  <input name="email" required id="email" type="email" placeholder="tu email">
   ¡Gracias!<br>
   <button tye="submit" class="contacto-enviar">enviar</button>
 </form>
